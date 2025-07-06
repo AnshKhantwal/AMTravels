@@ -169,26 +169,26 @@ const nameInput = document.getElementById("subscribename");
 const emailInput = document.getElementById("subscribeemail");
 const errorBox = document.getElementById("formError");
 
-  subscribeForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    errorBox.textContent = "";
+subscribeForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  errorBox.textContent = "";
+  errorBox.style.color = "red";
 
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/i;
 
-    if (name === "") {
-      errorBox.textContent = "Please enter your name.";
-    } else if (email === "") {
-      errorBox.textContent = "Please enter your email.";
-    } else if (!emailPattern.test(email )) {
-      errorBox.textContent = "Please enter a valid email address.";
-    } else {
-      alert("Subscribed successfully!");
-      subscribeForm.reset();
-    }
-  });
-
+  if (name === "") {
+    errorBox.textContent = "Please enter your name.";
+  } else if (email === "") {
+    errorBox.textContent = "Please enter your email.";
+  } else if (!emailPattern.test(email)) {
+    errorBox.textContent = "Please enter a valid email address.";
+  } else {
+    alert("Subscribed successfully!");
+    subscribeForm.reset();
+  }
+});
 
 //quotation validation
 
