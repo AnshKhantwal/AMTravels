@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airbnb Footer Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- testimonals/reviews -->
+
+
+<section class="testimonial-section">
+  <h2>What Our Travelers Say</h2>
+
+  <div class="testimonial-carousel">
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+    <div class="testimonial-track" id="testimonialTrack">
+      <!-- These will be cloned dynamically in JS -->
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3371/3371834.png" />
+        <p>"Perfectly organized trip!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4>- Aisha Kapoor</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/1881/1881121.png" />
+        <p>"Great service, highly recommended."</p>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <h4>- Rahul Mehra</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3371/3371820.png" />
+        <p>"Affordable and smooth."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4>- Neha Sharma</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3371/3371822.png" />
+        <p>"Best trip ever!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <h4>- Simran Kaur</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3371/3371878.png" />
+        <p>"Last-minute bookings made easy."</p>
+        <div class="stars">⭐⭐⭐</div>
+        <h4>- Arjun Patel</h4>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/128/3370/3370054.png" />
+        <p>"Professional and responsive team."</p>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <h4>- Sneha Rao</h4>
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+  </div>
+</section>
+
+
+
+
+
+<!-- sub part of footer -->
+<section class="inspiration">
+  <h2>Inspiration for future getaways</h2>
+
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('unique')">Unique stays</button>
+    <button class="tab-button" onclick="showTab('categories')">Categories</button>
+    <button class="tab-button" onclick="showTab('contact')">Contact-Us</button>
+  </div>
+
+  <hr class="tab-underline" />
+
+  <div id="unique" class="tab-content active">
+    <div class="grid">
+      <div><strong>Yurt Rentals</strong><br /><span>United States</span></div>
+      <div><strong>Yurt Rentals</strong><br /><span>United Kingdom</span></div>
+      <div><strong>Castle Rentals</strong><br /><span>United States</span></div>
+      <div><strong>Houseboats</strong><br /><span>United States</span></div>
+      <div><strong>Holiday Caravans</strong><br /><span>United Kingdom</span></div>
+      <div><strong>Private Island Rentals</strong><br /><span>United States</span></div>
+      <div><strong>Farm Houses</strong><br /><span>United States</span></div>
+      <div><strong>Farm Cottages</strong><br /><span>United Kingdom</span></div>
+      <div><strong>Cabin Rentals</strong><br /><span>Australia</span></div>
+      <div><strong>Luxury Cabins</strong><br /><span>United Kingdom</span></div>
+      <div><strong>Luxury Cabins</strong><br /><span>United States</span></div>
+      <div><strong>Holiday Chalets</strong><br /><span>United Kingdom</span></div>
+      <div><strong>Cottage Rentals</strong><br /><span>United States</span></div>
+      <div><strong>Holiday Cottages</strong><br /><span>United Kingdom</span></div>
+      <div><strong>Mansion Rentals</strong><br /><span>United States</span></div>
+      <div><strong>Villa Rentals</strong><br /><span>United Kingdom</span></div>
+      <div><strong>Holiday Bungalows</strong><br /><span>United Kingdom</span></div>
+      <button class="show-more-btn" id="toggle-more">Show more ⌄</button>
+    </div>
+
+
+    <div id="more-unique" class="grid">
+      <div><strong>Cottage Rentals</strong><span>United States</span></div>
+      <div><strong>Holiday Cottages</strong><span>United Kingdom</span></div>
+      <div><strong>Mansion Rentals</strong><span>United States</span></div>
+      <div><strong>Villa Rentals</strong><span>United Kingdom</span></div>
+      <div><strong>Holiday Bungalows</strong><span>United Kingdom</span></div>
+      <div><strong>Bungalow Rentals</strong><span>United States</span></div>
+      <div><strong>Condo Rentals</strong><span>United States</span></div>
+      <div><strong>Holiday Apartments</strong><span>Australia</span></div>
+      <div><strong>Holiday Houses</strong><span>United Kingdom</span></div>
+      <div><strong>Private Holiday Rentals</strong><span>United Kingdom</span></div>
+      <div><strong>Big House Rentals</strong><span>United States</span></div>
+      <div><strong>Big Cottages</strong><span>Australia</span></div>
+      <div><strong>Large Villas</strong><span>United Kingdom</span></div>
+      <div><strong>House Rentals with a Pool</strong><span>United States</span></div>
+      <div><strong>Cabin Rentals with a Pool</strong><span>United States</span></div>
+      <div><strong>Villas with a Pool</strong><span>United Kingdom</span></div>
+      <div><strong>Apartments with a Hot Tub</strong><span>United States</span></div>
+      <div><strong>Holiday Cottages with a Hot Tub</strong><span>United Kingdom</span></div>
+      <div><strong>Beach Cabins</strong><span>United States</span></div>
+      <div><strong>Beach Condos</strong><span>United States</span></div>
+      <div><strong>Beachfront Rentals</strong><span>United States</span></div>
+      <div><strong>Beach Houses</strong><span>United States</span></div>
+      <div><strong>Beach Villas</strong><span>United Kingdom</span></div>
+      <div><strong>Coastal Cottages</strong><span>United Kingdom</span></div>
+      <div><strong>Pet-Friendly Vacation Rentals</strong><span>United States</span></div>
+      <div><strong>Pet-Friendly Beach Rentals</strong><span>United States</span></div>
+      <div><strong>Pet-Friendly Cabin Rentals</strong><span>United States</span></div>
+      <div><strong>Dog-Friendly Cottages</strong><span>United Kingdom</span></div>
+    </div>
+
+  </div>
+
+  <div id="categories" class="tab-content">
+    <div class="grid">
+      <div>Amazing pools</div>
+      <div>Arctic</div>
+      <div>Camping</div>
+      <div>Camper vans</div>
+      <div>Castles</div>
+      <div>Containers</div>
+      <div>Countryside</div>
+      <div>Design</div>
+      <div>Earth homes</div>
+      <div>Farms</div>
+      <div>National parks</div>
+      <div>Vineyards</div>
+      <div>OMG!</div>
+      <div>Tiny homes</div>
+      <div>Towers</div>
+      <div>Windmills</div>
+      <div>Luxe</div>
+    </div>
+  </div>
+
+
+  <div id="contact" class="tab-content">
+    <div class="quotation-form">
+  <h2>Request a Travel Quotation</h2>
+  <form id="travelForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required placeholder="Your full name">
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required placeholder="you@example.com">
+
+    <label for="destination">Destination</label>
+    <input type="text" id="destination" required placeholder="e.g., Paris, Bali, Dubai">
+
+    <label for="date">Travel Date</label>
+    <input type="date" id="date" required>
+
+    <label for="budget">Estimated Budget (INR/USD)</label>
+    <input type="number" id="budget" required placeholder="e.g., 50000 or 1000">
+
+    <label for="people">No. of Travelers</label>
+    <input type="number" id="people" required min="1" placeholder="e.g., 2">
+
+    <label for="notes">Additional Notes</label>
+    <textarea id="notes" rows="4" placeholder="Mention any special requests..."></textarea>
+
+    <button type="submit">Request Quote</button>
+    <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+    <p class="success-message" id="message"></p>
+  </form>
+</div>
+  </div>
+</section>
+
+
+
+
+    <!-- footer of our website -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li>Help Centre</li>
+          <li>AirCover</li>
+          <li>Anti-discrimination</li>
+          <li>Disability support</li>
+          <li>Cancellation options</li>
+          <li>Report neighbourhood concern</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Popular Destination</h4>
+        <ul>
+          <li>Manali</li>
+          <li>Leh Ladakh</li>
+          <li>Dehradun</li>
+          <li>Ooty</li>
+          <li>Haridwar</li>
+          <li>Delhi</li>
+          <li>Gujrat</li>
+          <li>Jaipur</li>
+          <li>Srinagar</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>International Destination</h4>
+        <ul>
+          <li>Mauritius</li>
+          <li>Dubai</li>
+          <li>Australia</li>
+          <li>Africa</li>
+          <li>Germany</li>
+          <li>Europe</li>
+          <li>Maldives</li>
+          <li>Spain</li>
+          <li>Japan</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="subscribe-box">
+  <div class="text">
+    <h2>Let's keep in touch with AM Travels</h2>
+    <p>Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+  </div>
+    <form id="subscribeForm">
+    <input type="text" id="subscribename" placeholder="Your name" />
+    <input type="email" id="subscribeemail" placeholder="Example: test@gmail.com" />
+    <button type="submit">SUBSCRIBE</button>
+    <div class="error" id="formError"></div>
+  </form>
+  </div>
+
+
+    <div class="footer-bottom">
+      <div class="left">
+        © 2025 AM Travels, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Sitemap</a> · <a href="#">Company details</a>
+      </div>
+      <div class="right">
+        <span><img src="https://cdn-icons-png.flaticon.com/128/546/546310.png" height="14px" width="14px"> English (IN)</span>
+        <span>₹ INR</span>
+        <span><img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" height="14px" width="14px"></span>
+        <span><img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" height="14px" width="14px"></span>
+        <span><img src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png" height="14px" width="14px"></span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
