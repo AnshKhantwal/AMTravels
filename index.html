@@ -7,85 +7,52 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- navbar and search -->
-<header>
-    <div class="container header">
-      <h1 class="logo">TravelEase</h1>
-      <nav>
-        <a href="#"> <i class="fa-solid fa-plane-departure"></i>Flights</a>
-        <a href="#"> <i class="fa-solid fa-hotel"></i>Hotels</a>
-        <a href="#"> <i class="fa-solid fa-train"></i>Trains</a>
-        <a href="#"> <i class="fa-solid fa-taxi"></i>Cabs</a>
-        <a href="#"> <i class="fa-solid fa-umbrella-beach"></i>Holidays</a>
-        <a href="#"> <i class="fa-solid fa-ellipsis"></i>More</a>
-      </nav>
-      <button class="login-btn">Login / Signup</button>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach" class="hero-img">
-    <div class="hero-content">
-      <h2>Where Every Experience Counts!</h2>
-      <div class="search-box">
-        <input type="text" placeholder="Enter Your Dream Destination" list="topDestinations"  id="searchInput">
-        
-        <button onclick="searchDestination()">Search</button>
-        <datalist id="topDestinations">
-  <option value="London"></option>
-  <option value="Kerala"></option>
-  <option value="Bali"></option>
-  <option value="Kashmir"></option>
-  <option value="Paris"></option>
-  <option value="New York"></option>
-  <option value="Dubai"></option>
-  <option value="Maldives"></option>
-  <option value="Thailand"></option>
-  <option value="Singapore"></option>
-</datalist>
+
+<!-- deals section  -->
+<section class="deals-section">
+  <div class="header">
+    <h2>Deals You Can't Miss</h2>
+    <p>Travel beyond boundaries with incredible savings</p>
+  </div>
+  <div class="deals-layout">
+    <!-- Left Column -->
+    <div class="left-column">
+      <div class="deal large" style="background-image: url('https://images.emtcontent.com/holiday-img/home-img/kashmir-handpckd.webp');">
+        <div class="text"><h3>KASHMIR</h3><p>5 Nights / 6 Days</p></div>
+      </div>
+      <div class="bottom-horizontal">
+        <div class="deal small" style="background-image: url('https://images.emtcontent.com/holiday-img/home-img/kerala-handpckd.webp');">
+          <div class="text"><h3>KERALA</h3><p>4 Nights / 5 Days</p></div>
+        </div>
+        <div class="deal small" style="background-image: url('https://images.emtcontent.com/holiday-img/home-img/himachal-handpckd.webp');">
+          <div class="text"><h3>HIMACHAL PRADESH</h3><p>5 Nights / 6 Days</p></div>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Categories -->
-  <section class="categories">
-    <button><div class="cat-content">
-      <img src="Group Departure.jpg" alt="Group" />
-      <p class="head">Group Departure</p>
-    </div></button>
+    <!-- Center Column -->
+    <div class="center-column">
+      <div class="deal tall" style="background-image: url('https://images.emtcontent.com/holiday-img/home-img/thailand.jpeg');">
+        <div class="text"><h3>THAILAND</h3><p>4 Nights / 5 Days</p></div>
+      </div>
+    </div>
 
-     <button>
-    <div class="cat-content">
-      <img src="Honeymoon.jpg" alt="Honeymoon" />
-      <p class="head">Honeymoon</p>
+    <!-- Right Column -->
+    <div class="right-column">
+      <div class="deal medium" style="background-image: url('https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D');">
+        <div class="text"><h3>BALI</h3><p>4 Nights / 5 Days</p></div>
+      </div>
+      <div class="deal small" style="background-image: url('https://images.emtcontent.com/holiday-img/home-img/singapore-handpckd.webp');">
+        <div class="text"><h3>SINGAPORE</h3><p>3 Nights / 4 Days</p></div>
+      </div>
     </div>
-  </button>
-  <button>
-    <div class="cat-content">
-      <img src="Pilgrimage.jpg" alt="Pilgrimage" />
-      <p class="head">Pilgrimage</p>
-    </div>
-  </button>
-  <button>
-    <div class="cat-content">
-      <img src="Ayurveda.jpg" alt="Ayurveda" />
-      <p class="head">Ayurveda</p>
-    </div>
-  </button>
-  <button>
-    <div class="cat-content">
-      <img src="Luxury.jpg" alt="Luxury" />
-      <p class="head">Luxury</p>
-    </div>
-  </button>
-  <button>
-    <div class="cat-content">
-      <img src="Adventure.jpg" alt="Adventure" />
-      <p class="head">Adventure</p>
-    </div>
-  </button>
-  </section>
+  </div>
+</section>
+
+
+
+
 
 
 
