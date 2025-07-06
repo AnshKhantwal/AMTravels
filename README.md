@@ -14,7 +14,6 @@ validations, and clean styling.
 📩 Contact Form: Subscribe form with real-time validation for name and email.
 <br>
 📝 Quotation Request Form:
-<br>
 <ul>
 <li>Fields: Name, Email, Destination, Travel Date, Budget.
 <li>Live validation with user feedback.</li>
@@ -23,10 +22,8 @@ validations, and clean styling.
 </ul>
 <br>
 👥 Testimonial Section:
-<br>
 <ul>
 <li>Carousel with arrows and autoplay.</li>
-<li>Pause on hover.</li>
 <li>Displays 3 reviews at a time.</li>
 <li>User profile images and star ratings.</li>
 </ul>
