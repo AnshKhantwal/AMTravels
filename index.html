@@ -5,9 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Airbnb Footer Clone</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
 </head>
 <body>
+ <!-- Header -->
+  <header>
+    <div class="container header">
+      <a href="#">
+      <img src="logo.jpg" alt="Logo" class="logo-img">
+    </a>
+      <nav>
+        <a href="#"> <i class="fa-solid fa-plane-departure"></i>Flights</a>
+        <a href="#"> <i class="fa-solid fa-hotel"></i>Hotels</a>
+        <a href="#"> <i class="fa-solid fa-train"></i>Trains</a>
+        <a href="#"> <i class="fa-solid fa-taxi"></i>Cabs</a>
+        <a href="#"> <i class="fa-solid fa-umbrella-beach"></i>Holidays</a>
+        <a href="#"> <i class="fa-solid fa-ellipsis"></i>More</a>
+      </nav>
+      <button class="login-btn" style="font-weight: 300;">Login / Signup</button>
+    </div>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach" class="hero-img">
+    <div class="hero-content">
+      <h2>Every Trip Feels Like Home!</h2>
+      <div class="search-box">
+        <input type="text" placeholder="Enter Your Dream Destination" list="topDestinations"  id="searchInput">
+        
+        <button onclick="searchDestination()">Search</button>
+        <datalist id="topDestinations">
+  <option value="London"></option>
+  <option value="Kerala"></option>
+  <option value="Bali"></option>
+  <option value="Kashmir"></option>
+  <option value="Paris"></option>
+  <option value="New York"></option>
+  <option value="Dubai"></option>
+  <option value="Maldives"></option>
+  <option value="Thailand"></option>
+  <option value="Singapore"></option>
+</datalist>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <button><div class="cat-content">
+      <img src="Group Departure.jpg" alt="Group" />
+      <p class="head">Group Departure</p>
+    </div></button>
+
+     <button>
+    <div class="cat-content">
+      <img src="Honeymoon.jpg" alt="Honeymoon" />
+      <p class="head">Honeymoon</p>
+    </div>
+  </button>
+  <button>
+    <div class="cat-content">
+      <img src="Pilgrimage.jpg" alt="Pilgrimage" />
+      <p class="head">Pilgrimage</p>
+    </div>
+  </button>
+  <button>
+    <div class="cat-content">
+      <img src="Ayurveda.jpg" alt="Ayurveda" />
+      <p class="head">Ayurveda</p>
+    </div>
+  </button>
+  <button>
+    <div class="cat-content">
+      <img src="Luxury.jpg" alt="Luxury" />
+      <p class="head">Luxury</p>
+    </div>
+  </button>
+  <button>
+    <div class="cat-content">
+      <img src="Adventure.jpg" alt="Adventure" />
+      <p class="head">Adventure</p>
+    </div>
+  </button>
+  </section>
+
+  <!-- Trending Destinations -->
+  <section class="trending">
+  <h1>Top Trending Destinations</h1>
+  <p>Explore the hottest travel spots around the globe.</p>
+  <div class="cards">
+    <div class="card-container">
+      <div class="card" >
+        <img src="Europe.jpg" alt="Europe" style=" width: 100% ;height:auto;">
+      </div>
+      <h3>Europe</h3>
+    </div>
+
+    <div class="card-container" >
+      <div class="card" >
+        <img src="Kerala.jpg" alt="Kerala" style=" width: 100% ;height:auto;">
+      </div>
+      <h3>Kerala</h3>
+    </div>
+
+    <div class="card-container">
+      <div class="card" >
+        <img src="Bali.jpg" alt="Bali" style=" width: 100% ;height:auto;">
+      </div>
+      <h3>Bali</h3>
+    </div>
+
+    <div class="card-container" >
+      <div class="card" >
+        <img src="Kashmir.jpg" alt="Kashmir" style=" width: 100% ;height:auto;">
+      </div>
+      <h3>Kashmir</h3>
+    </div>
+    <div class="card-container">
+  <div class="card">
+    <img src="Thailand.jpg" alt="Thailand" style=" width: 100% ;height:auto;" >
+  </div>
+  <h3>Thailand</h3>
+</div>
+  </div>
+</section>
+
+
+ 
+
+
+
+  <!-- Packages Section -->
+   <section class="holiday-packages">
+  <h1>Handpicked Holiday Packages</h1>
+  <p>Indulge in unforgettable adventure with special tour plans.</p>
+
+  <div class="package-buttons">
+    <button class="active" onclick="showPackages('domestic')">Domestic</button>
+    <button onclick="showPackages('international')">International</button>
+  </div>
+
+  <div class="scroll-wrapper">
+    <button class="scroll-btn left" onclick="scrollPackages(-1)">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="packages-scroll" id="packageContainer">
+      <!-- Domestic cards initially -->
+    </div>
+    <button class="scroll-btn right" onclick="scrollPackages(1)">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
 
 <!-- deals section  -->
 <section class="deals-section">

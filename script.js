@@ -1,3 +1,144 @@
+function searchDestination() {
+  const input = document.getElementById("searchInput").value;
+  if (input.trim() !== "") {
+    alert(`Searching for:${input}`);
+  } else {
+    alert("Please enter a destination!");
+  }
+}
+
+function showPackages(type) {
+  const container = document.getElementById('packageContainer');
+  const buttons = document.querySelectorAll('.package-buttons button');
+
+  // Remove active class
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  if (type === 'domestic') {
+    buttons[0].classList.add('active');
+  } else {
+    buttons[1].classList.add('active');
+  }
+
+  if (type === 'domestic') {
+    container.innerHTML = `
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?fm=jpg&q=60&w=3000" alt="Goa">
+        <div class="package-info">
+          <h3>Goa</h3>
+          <p>From ₹ <span>8,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="Kerala.jpg" alt="Kerala">
+        <div class="package-info">
+          <h3>Kerala</h3>
+          <p>From ₹ <span>11,999</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="https://plus.unsplash.com/premium_photo-1705363013491-0ed4a7a4fe99?fm=jpg&q=60&w=3000" alt="Andaman">
+        <div class="package-info">
+          <h3>Andaman</h3>
+          <p>From ₹ <span>14,999</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="https://plus.unsplash.com/premium_photo-1697730464803-fcede713753e?fm=jpg&q=60&w=3000" alt="Gujarat">
+        <div class="package-info">
+          <h3>Gujarat</h3>
+          <p>From ₹ <span>14,999</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQObMtGdi4GJiYPxTG2RW8t6GtqWR2YsO74Tw&s" alt="Ladakh">
+        <div class="package-info">
+          <h3>Ladakh</h3>
+          <p>From ₹ <span>18,500</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="https://plus.unsplash.com/premium_photo-1661962428918-6a57ab674e23?fm=jpg&q=60&w=3000" alt="Rajasthan">
+        <div class="package-info">
+          <h3>Rajasthan</h3>
+          <p>From ₹ <span>12,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    `;
+  } else if (type === 'international') {
+    container.innerHTML = `
+      <div class="package-card">
+        <img src="https://images.unsplash.com/photo-1557750255-c76072a7aad1?fm=jpg&q=60&w=3000" alt="Vietnam">
+        <div class="package-info">
+          <h3>Vietnam</h3>
+          <p>From ₹ <span>25,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="Europe.jpg" alt="Europe">
+        <div class="package-info">
+          <h3>Europe</h3>
+          <p>From ₹ <span>85,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="https://media.istockphoto.com/id/535455441/photo/view-of-sydney-harbour-australia.jpg?s=612x612&w=0&k=20&c=o7qSiUvYzMp94lYYb7R1ZUAMcEG54byX0bU3UY1z2sQ=" alt="Australia">
+        <div class="package-info">
+          <h3>Australia</h3>
+          <p>From ₹ <span>95,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4aJu6cFeYR_EKcW-b-9D7bC_s0T39Akcpmg&s" alt="Malaysia">
+        <div class="package-info">
+          <h3>Malaysia</h3>
+          <p>From ₹ <span>35,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="https://t3.ftcdn.net/jpg/00/77/16/10/360_F_77161061_FdevXEertWnL3j7yeYCpH3xfD823cibi.jpg" alt="Singapore">
+        <div class="package-info">
+          <h3>Singapore</h3>
+          <p>From ₹ <span>55,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="package-card">
+        <img src="Thailand.jpg" alt="Thailand">
+        <div class="package-info">
+          <h3>Thailand</h3>
+          <p>From ₹ <span>30,000</span></p>
+          <a href="#">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    `;
+  }
+}
+
+function scrollPackages(direction) {
+  const container = document.getElementById('packageContainer');
+  const scrollAmount = 250;
+  container.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+showPackages('domestic');
+
+
+
+
 function showTab(tabId) {
     const buttons = document.querySelectorAll('.tab-button');
     const contents = document.querySelectorAll('.tab-content');
