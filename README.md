@@ -1,4 +1,4 @@
-#TravelEase — A Travel Quotation & Booking Website
+# TravelEase — A Travel Quotation & Booking Website
 Welcome to TravelEase, a responsive travel website built to provide a seamless experience for users to explore travel inspirations,
 <br> 
 submit custom trip quotation requests, and view client testimonials. Designed for modern UX with dynamic elements, form 
